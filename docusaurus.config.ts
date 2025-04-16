@@ -24,13 +24,16 @@ const config: Config = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          path: 'docs',
-          routeBasePath: 'docs',
+          path: '.',
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.ts'),
           editUrl: 'https://github.com/abduriaz/volumetric-sdk-docs/edit/main/',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
+          exclude: ['**/node_modules/**'],
         },
+        blog: false,
+        pages: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -44,17 +47,17 @@ const config: Config = {
       title: 'Volumetric SDK',
       logo: { alt: 'SDK Logo', src: 'img/logo.svg' },
       items: [
-        { to: 'docs/introduction/overview', label: 'Documentation', position: 'left' },
+        { to: '/introduction/overview', label: 'Documentation', position: 'left' },
         {
           label: 'API Reference',
           position: 'left',
           items: [
-            { to: 'docs/api-reference/python/overview', label: 'Python' },
-            { to: 'docs/api-reference/cpp/overview', label: 'C++' },
-            { to: 'docs/api-reference/csharp/overview', label: 'C#' },
+            { to: '/api-reference/python/overview', label: 'Python' },
+            { to: '/api-reference/cpp/overview', label: 'C++' },
+            { to: '/api-reference/csharp/overview', label: 'C#' },
           ],
         },
-        { to: 'docs/resources/sample-apps', label: 'Resources', position: 'left' },
+        { to: '/resources/sample-apps', label: 'Resources', position: 'left' },
         {
           href: 'https://github.com/abduriaz/volumetric-sdk-docs',
           label: 'GitHub',
@@ -67,10 +70,10 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Documentation',
           items: [
-            { label: 'Introduction', to: 'docs/introduction/overview' },
-            { label: 'Getting Started', to: 'docs/getting-started/installing-the-sdk' },
+            { label: 'Introduction', to: '/introduction/overview' },
+            { label: 'Getting Started', to: '/getting-started/installing-the-sdk' },
           ],
         },
         {
