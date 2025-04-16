@@ -44,9 +44,9 @@ const config: Config = {
       title: 'Volumetric SDK',
       logo: { alt: 'SDK Logo', src: 'img/logo.svg' },
       items: [
-        { to: 'docs/introduction/overview', label: 'Docs', position: 'left' },
+        { to: 'docs/introduction/overview', label: 'Documentation', position: 'left' },
         {
-          label: 'API',
+          label: 'API Reference',
           position: 'left',
           items: [
             { to: 'docs/api-reference/python/overview', label: 'Python' },
@@ -80,13 +80,25 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `© ${new Date().getFullYear()} The Codegen`,
+      copyright: `© ${new Date().getFullYear()} The Codegen`,
     },
 
     prism: {
-      theme: require('prism-react-renderer/themes/github'),
-      darkTheme: require('prism-react-renderer/themes/dracula'),
-      additionalLanguages: ['cpp', 'csharp', 'python'],
+      theme: {
+        plain: {
+          color: "#393A34",
+          backgroundColor: "#f6f8fa"
+        },
+        styles: []
+      },
+      darkTheme: {
+        plain: {
+          color: "#F8F8F2",
+          backgroundColor: "#282A36"
+        },
+        styles: []
+      },
+      additionalLanguages: ['cpp', 'csharp', 'python']
     },
 
     trailingSlash: false,
