@@ -24,7 +24,7 @@ const config: Config = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          path: '.',
+          path: 'docs',
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.ts'),
           editUrl: 'https://github.com/abduriaz/volumetric-sdk-docs/edit/main/',
@@ -45,16 +45,31 @@ const config: Config = {
   themeConfig: {
     navbar: {
       title: 'Volumetric SDK',
-      logo: { alt: 'SDK Logo', src: 'img/logo.svg' },
+      logo: { 
+        alt: 'Volumetric SDK Logo', 
+        src: '/components/volumetric-sdk-logo.png',
+        width: 32,
+        height: 32
+      },
       items: [
         { to: '/introduction/overview', label: 'Documentation', position: 'left' },
         {
           label: 'API Reference',
           position: 'left',
           items: [
-            { to: '/api-reference/python/overview', label: 'Python' },
-            { to: '/api-reference/cpp/overview', label: 'C++' },
-            { to: '/api-reference/csharp/overview', label: 'C#' },
+            { to: '/api-reference/python/overview', label: 'Python API' },
+            { to: '/api-reference/cpp/overview', label: 'C++ API' },
+            { to: '/api-reference/csharp/overview', label: 'C# API' },
+          ],
+        },
+        {
+          label: 'Guides',
+          position: 'left',
+          items: [
+            { to: '/getting-started/installing-the-sdk', label: 'Getting Started' },
+            { to: '/guides/tutorials/scene-from-scratch', label: 'Tutorials' },
+            { to: '/guides/working-with-models/visual-tree', label: 'Working with Models' },
+            { to: '/guides/volume-behavior/volume-restore', label: 'Volume Behavior' },
           ],
         },
         { to: '/resources/sample-apps', label: 'Resources', position: 'left' },
@@ -74,16 +89,36 @@ const config: Config = {
           items: [
             { label: 'Introduction', to: '/introduction/overview' },
             { label: 'Getting Started', to: '/getting-started/installing-the-sdk' },
+            { label: 'Tutorials', to: '/guides/tutorials/scene-from-scratch' },
           ],
         },
         {
-          title: 'Community',
+          title: 'API Reference',
           items: [
+            { label: 'Python API', to: '/api-reference/python/overview' },
+            { label: 'C++ API', to: '/api-reference/cpp/overview' },
+            { label: 'C# API', to: '/api-reference/csharp/overview' },
+          ],
+        },
+        {
+          title: 'Guides',
+          items: [
+            { label: 'Working with Models', to: '/guides/working-with-models/visual-tree' },
+            { label: 'Volume Behavior', to: '/guides/volume-behavior/volume-restore' },
+            { label: 'Advanced Topics', to: '/guides/tutorials/advanced-composition' },
+          ],
+        },
+        {
+          title: 'Resources',
+          items: [
+            { label: 'Sample Apps', to: '/resources/sample-apps' },
+            { label: 'FAQs', to: '/resources/faqs' },
+            { label: 'Glossary', to: '/resources/glossary' },
             { label: 'GitHub', href: 'https://github.com/abduriaz/volumetric-sdk-docs' },
           ],
         },
       ],
-      copyright: `© ${new Date().getFullYear()} The Codegen`,
+      copyright: `© ${new Date().getFullYear()} Microsoft Corporation. All rights reserved.`,
     },
 
     prism: {
