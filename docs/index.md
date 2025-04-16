@@ -9,7 +9,7 @@ The Volumetric SDK provides powerful tools for processing and working with volum
 
 1. [Install the SDK](/getting-started/installing-the-sdk)
 2. [Learn the Basics](/introduction/overview)
-3. [Explore API Reference](/api-reference/overview)
+3. [Explore API Reference](/api-reference/python/overview)
 
 ## Key Features
 
@@ -20,6 +20,6 @@ The Volumetric SDK provides powerful tools for processing and working with volum
 
 ## Getting Help
 
-- Check out our [tutorials](/tutorials)
-- Browse the [API reference](/api-reference)
+- Check out our [tutorials](/guides/tutorials/scene-from-scratch)
+- Browse the [API reference](/api-reference/python/overview)
 - Visit our [GitHub repository](https://github.com/abduriaz/volumetric-sdk-docs) 
