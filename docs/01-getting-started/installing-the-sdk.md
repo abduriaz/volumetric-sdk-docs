@@ -18,25 +18,20 @@ import TabItem from '@theme/TabItem';
 # This is a placeholder Python example
 # The actual SDK implementation may differ
 
-import volumetric_sdk as vs
+# Import the SDK
+import volumetric_sdk
 
-# Example of SDK initialization
-sdk = vs.SDK()
+# Initialize the SDK
+# Your initialization code here
 
-# Example of volume creation
-volume = sdk.create_volume(
-    dimensions=(100, 100, 100),
-    voxel_size=0.1
-)
+# Create and configure a volume
+# Your volume creation code here
 
-# Example of data manipulation
-volume.set_voxel((50, 50, 50), 1.0)
+# Process the volume
+# Your processing code here
 
-# Example of volume processing
-processed = sdk.process_volume(volume)
-
-# Example of saving results
-processed.save("output.vox")
+# Save or export the results
+# Your export code here
 ```
 
 </TabItem>
@@ -46,27 +41,21 @@ processed.save("output.vox")
 // This is a placeholder C++ example
 // The actual SDK implementation may differ
 
+// Include SDK headers
 #include <volumetric_sdk.hpp>
-#include <iostream>
 
 int main() {
-    // Example of SDK initialization
-    VolumetricSDK sdk;
+    // Initialize the SDK
+    // Your initialization code here
     
-    // Example of volume creation
-    auto volume = sdk.create_volume(
-        {100, 100, 100},  // dimensions
-        0.1f              // voxel size
-    );
+    // Create and configure a volume
+    // Your volume creation code here
     
-    // Example of data manipulation
-    volume->set_voxel({50, 50, 50}, 1.0f);
+    // Process the volume
+    // Your processing code here
     
-    // Example of volume processing
-    auto processed = sdk.process_volume(*volume);
-    
-    // Example of saving results
-    processed->save("output.vox");
+    // Save or export the results
+    // Your export code here
     
     return 0;
 }
@@ -79,27 +68,22 @@ int main() {
 // This is a placeholder C# example
 // The actual SDK implementation may differ
 
+// Using SDK namespace
 using VolumetricSDK;
 
 class Program {
     static void Main(string[] args) {
-        // Example of SDK initialization
-        var sdk = new SDK();
+        // Initialize the SDK
+        // Your initialization code here
         
-        // Example of volume creation
-        var volume = sdk.CreateVolume(
-            new Vector3(100, 100, 100),  // dimensions
-            0.1f                         // voxel size
-        );
+        // Create and configure a volume
+        // Your volume creation code here
         
-        // Example of data manipulation
-        volume.SetVoxel(new Vector3(50, 50, 50), 1.0f);
+        // Process the volume
+        // Your processing code here
         
-        // Example of volume processing
-        var processed = sdk.ProcessVolume(volume);
-        
-        // Example of saving results
-        processed.Save("output.vox");
+        // Save or export the results
+        // Your export code here
     }
 }
 ```
