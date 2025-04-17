@@ -10,6 +10,7 @@ const config: Config = {
 
   organizationName: 'abduriaz',
   projectName: 'volumetric-sdk-docs',
+  deploymentBranch: 'main',
 
 
   onBrokenLinks: 'throw',
