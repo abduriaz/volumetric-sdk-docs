@@ -109,8 +109,8 @@ class Program {
 
 ## Installation Steps
 
-This section will contain detailed installation instructions for each supported language:
+For detailed information about each language's implementation, please refer to the following overview pages:
 
-1. [Python Installation](/getting-started/python-installation) - Coming soon
-2. [C++ Installation](/getting-started/cpp-installation) - Coming soon
-3. [C# Installation](/getting-started/csharp-installation) - Coming soon
+- [Python API Overview](/api-reference/python/overview)
+- [C++ API Overview](/api-reference/cpp/overview)
+- [C# API Overview](/api-reference/csharp/overview)
