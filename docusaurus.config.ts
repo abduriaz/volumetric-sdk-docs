@@ -5,7 +5,7 @@ const config: Config = {
   title: 'Volumetric SDK',
   url: 'https://abduriaz.github.io',
   baseUrl: '/volumetric-sdk-docs/',
-  favicon: 'img/favicon.ico',
+  favicon: '/components/volumetric-sdk-logo.png',
 
 
   organizationName: 'abduriaz',
@@ -50,7 +50,8 @@ const config: Config = {
         alt: 'Volumetric SDK Logo', 
         src: '/components/volumetric-sdk-logo.png',
         width: 32,
-        height: 32
+        height: 32,
+        style: { marginRight: '10px' }
       },
       items: [
         { to: '/introduction/overview', label: 'Documentation', position: 'left' },
